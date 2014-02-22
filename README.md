@@ -1,7 +1,7 @@
 PyBossa application for analyzing light pollution
 =================================================
 
-This is an application from Alejandro Sánchez de Miguel in collaboration with
+This is an application from [Alejandro Sánchez de Miguel](http://guaix.fis.ucm.es/DarkSkies) in collaboration with
 Daniel and Crowdcrafting.org.
 
 The goal is to allow people to analyzing the light pollution in cities using
@@ -13,7 +13,7 @@ This application has three files:
 *  template.html: the view for every task and deal with the data of the answers.
 *  tutorial.html: a simple tutorial for the volunteers.
 
-![alt screenshot](http://i.imgur.com/pUFBv0i.png)
+![alt screenshot](http://i.imgur.com/0fhp4jx.png)
 
 Testing the application
 =======================
