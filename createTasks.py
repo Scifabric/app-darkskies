@@ -166,7 +166,8 @@ def run(app_config, options):
         # Data for the tasks
         task_info = dict(
                          n_answers=options.n_answers,
-                         link=photo['link'])
+                         link_big=photo['link_big'],
+                         link_small=photo['link_small'])
         try:
             response = pbclient.create_task(app.id, task_info, priority_0=priority)
             check_api_error(response)

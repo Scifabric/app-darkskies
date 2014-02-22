@@ -27,11 +27,20 @@ def get_iss_photos(start, n_photos, mission, size="small"):
     """
     photos = []
     for i in range(start, start + n_photos):
-        pattern = "http://eol.jsc.nasa.gov/sseop/images/ESC/%s/%s/%s-E-%s.JPG" % (
+        pattern_s = "http://eol.jsc.nasa.gov/sseop/images/ESC/%s/%s/%s-E-%s.JPG" % (
             size,
             mission,
             mission,
             i)
-        tmp = dict(link=pattern)
+        pattern_b = "http://eol.jsc.nasa.gov/sseop/images/ESC/%s/%s/%s-E-%s.JPG" % (
+            'large',
+            mission,
+            mission,
+            i)
+
+        tmp = dict(link_small=pattern_s,
+                   link_big=pattern_b
+                   )
+
         photos.append(tmp)
     return photos
